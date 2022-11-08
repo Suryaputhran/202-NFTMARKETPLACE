@@ -17,6 +17,7 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
       case 0: return '/';
       case 1: return '/listed-nfts';
       case 2: return '/my-nfts';
+      case 3: return '/Gaming/IGO';
       default:
         break;
     }
@@ -24,7 +25,7 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
 
   return (
     <ul className={`list-none flexCenter flex-row ${isMobile && 'flex-col h-full'}`}>
-      {['Explore NFTs', 'Listed NFTs', 'My NFTs'].map((item, i) => (
+      {['Explore', 'Marketplace', 'My NFTs', 'Gaming / IGO'].map((item, i) => (
         <li
           key={i}
           onClick={() => {
@@ -71,7 +72,7 @@ const ButtonGroup = ({ setActive, router, setIsOpen }) => {
 const checkActive = (active, setActive, router) => {
   switch (router.pathname) {
     case '/':
-      if (active !== 'Explore NFTs') setActive('Explore NFTs');
+      if (active !== 'Explore') setActive('Explore');
       break;
     case '/listed-nfts':
       if (active !== 'Listed NFTs') setActive('Listed NFTs');
@@ -91,7 +92,7 @@ const checkActive = (active, setActive, router) => {
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
-  const [active, setActive] = useState('Explore NFTs');
+  const [active, setActive] = useState('Explore');
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -109,18 +110,18 @@ const Navbar = () => {
           <div
             className="flexCenter md:hidden cursor-pointer"
             onClick={() => {
-              setActive('Explore NFTs');
+              setActive('Explogggre NFTs');
             }}
           >
             <Image src={images.logo02} objectFit="contain" width={40} height={40} alt="logo" />
-            <p className="dark:text-white text-nft-black-1 font-bold text-xl ml-1">Polyplace</p>
+            <p className="dark:text-white text-nft-black-1 font-bold text-xl ml-1">202 NFT</p>
           </div>
         </Link>
         <Link href="/">
           <div
             className="hidden md:flex cursor-pointer"
             onClick={() => {
-              setActive('Explore NFTs');
+              setActive('Explore');
               setIsOpen(false);
             }}
           >

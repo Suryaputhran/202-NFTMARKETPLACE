@@ -2,8 +2,7 @@
 <img src="/assets/logo02.png" alt="Alt text logo" title="Logo" width="80px" height="80px">
 </p>
 
-# Polyplace
-
+# 202NFT
 An open decentralized NFT Marketplace built with Solidity and Next.js, powered by Polygon Technologies. It basically is an open platform where users can mint and trade their own NFTs.
 
 
@@ -71,12 +70,7 @@ You can get up to 2 MATIC/day by pasting your address here: https://mumbaifaucet
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### The repository
 
-First, you will need to `clone` or `fork` the repository into your Github account:
-
-```
-git clone https://github.com/chrisstef/polyplace.git
 ```
 
 ### Installing
@@ -135,7 +129,7 @@ Finally, run the following command in your terminal to open the User Interface:
 npm run dev
 ```
 
-An instance of Polyplace will be up and running on your local environment.
+An instance of 202 NFT will be up and running on your local environment.
 
 ### Technology stack
 
